@@ -1,4 +1,3 @@
-import Card from "../container/card";
 import MiniCard from "../container/minicard";
 
 let kepengurusanData = [
@@ -54,11 +53,11 @@ export function KepengurusanContent() {
     <div className="container p-3 mt-6 mx-auto items-center rounded-xl text-lg font-bold text-center">
       Bagan Kepengurusan PASAINS Periode 2024
       <div className="mt-12 space-y-4xl">
-        <MiniCard
-          title={kepengurusanData[0].title}
-          description={kepengurusanData[0].description}
-          picture={kepengurusanData[0].picture}
-        />
+        <div>
+          <h1>{kepengurusanData[0].title}</h1>
+          <h2>{kepengurusanData[0].description}</h2>
+          <img src={require("../image/ikanhiu.jpg")} />
+        </div>
         <MiniCard
           title={kepengurusanData[1].title}
           description={kepengurusanData[1].description}

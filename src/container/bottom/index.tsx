@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 
 export function Bottom() {
   return (
-    <div className="flex flex-row max-w-full w-full bg-black static bottom-0 place-content-center">
+    <div className="flex flex-row max-w-full w-full mt-[60px] bg-black static bottom-0 place-content-center">
       <div className="flex flex-col">
         <div>
           <img
@@ -28,27 +28,42 @@ export function Bottom() {
           </div>
         </div>
       </div>
-      <div className="mt-12 space-y-xl text-md text-white font-light tracking-wide ml-96">
-        <div className="flex flex-row items-center">
+      <div className="mt-12 space-y-md text-md text-white font-light tracking-wide ml-96">
+        <a
+          href="https://www.instagram.com/pasains96/"
+          className="flex flex-row items-center"
+        >
           <FaInstagram className="mr-3" />
           INSTAGRAM
-        </div>
-        <div className="flex flex-row items-center">
+        </a>
+        <a
+          href="https://www.facebook.com/pasains.fmipa/"
+          className="flex flex-row items-center"
+        >
           <FaFacebook className="mr-3" />
           FACEBOOK
-        </div>
-        <div className="flex flex-row items-center">
+        </a>
+        <a
+          href="https://twitter.com/pasains96"
+          className="flex flex-row items-center"
+        >
           <FaXTwitter className="mr-3" />
           X/TWITTER
-        </div>
-        <div className="flex flex-row items-center">
+        </a>
+        <a
+          href="https://www.youtube.com/@PasainsUGM"
+          className="flex flex-row items-center"
+        >
           <FiYoutube className="mr-3" />
           YOUTUBE
-        </div>
-        <div className="flex flex-row items-center">
+        </a>
+        <a
+          href="https://www.tiktok.com/@pasains"
+          className="flex flex-row items-center"
+        >
           <PiTiktokLogo className="mr-3" />
           TIKTOK
-        </div>
+        </a>
       </div>
     </div>
   );

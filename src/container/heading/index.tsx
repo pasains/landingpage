@@ -2,26 +2,15 @@ import { NavBar } from "../navbar";
 
 export function Heading() {
   return (
-    <div className="flex flex-row max-w-full w-full bg-white fixed place-content-center">
+    <div className="flex-no-wrap flex w-full z-9999 h-[120px] bg-white fixed place-content-center top-0">
       <div>
         <img
-          src={require("../../image/lambang.jpg")}
+          src={require("../../image/logo.png")}
           alt="logopasains"
-          className="size-xsm mr-6 my-6"
+          className="size-xsm my-[15px]"
         />
       </div>
-      <div className="flex flex-col space-y-xsm">
-        <h1 className="text-xl font-bold text-bold-orange mt-3">PASAINS </h1>
-        <p className="text-black text-md font-normal">
-          {"Unit Kegiatan Mahasiswa Pecinta Alam"} <br />
-          <span>
-            {
-              "Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Gadjah Mada"
-            }
-          </span>
-        </p>
-      </div>
-      <div>
+      <div className="my-auto">
         <NavBar />
       </div>
       <div className="flex flex-row my-auto">

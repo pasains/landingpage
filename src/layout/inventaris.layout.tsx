@@ -17,7 +17,7 @@ export function InventarisLayout(props: InventarisProps) {
         <Heading />
       </div>
       <div className="flex flex-row">
-        <div className="mt-32 mx-auto bg-light-orange overflow-hidden max-w-full">
+        <div className="pt-[120px] mx-auto bg-light-orange overflow-hidden max-w-full">
           <div className="md:flex">
             <div className="md:shrink-0">
               <img className="object-cover size-2xl" src={props.picture} />

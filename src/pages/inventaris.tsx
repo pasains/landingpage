@@ -7,7 +7,7 @@ import { Bottom } from "../container/bottom";
 export function Inventaris() {
   const [tools, setTools] = useState<InventarisProps[]>([]);
   useEffect(() => {
-    fetch(`http://localhost:8080/api/inventaris/name`)
+    fetch(`http://localhost:8080/api/inventaris/`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Not found");
@@ -23,7 +23,7 @@ export function Inventaris() {
         <Heading />
       </div>
       <div className="flex flex-col">
-        <div className="text-xl mt-32 mx-auto text-center font-normal text-bold-orange">
+        <div className="text-xl pt-[120px] mx-auto text-center font-normal text-bold-orange">
           Inventaris Alat
         </div>
         <div className="grid grid-cols-4 overflow-auto mx-auto items-center gap-[42px] mt-12 items-centers">

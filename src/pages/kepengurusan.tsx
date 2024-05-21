@@ -8,8 +8,8 @@ export function Kepengurusan() {
       <div>
         <Heading />
       </div>
-      <div className="flex flex-col">
-        <div className="mt-32">
+      <div className="flex flex-col pt-[120px]">
+        <div>
           <KepengurusanContent />
         </div>
         <div className="mt-12">

@@ -8,11 +8,11 @@ export function About() {
       <div>
         <Heading />
       </div>
-      <div className="flex flex-col">
-        <div className="w-full max-w-full mt-32">
+      <div className="flex flex-col pt-[120px]">
+        <div className="w-full max-w-full">
           <AboutContent />
         </div>
-        <div className="mt-6">
+        <div>
           <Bottom />
         </div>
       </div>
