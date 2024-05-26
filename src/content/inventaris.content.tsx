@@ -7,7 +7,7 @@ export function InventarisContent() {
   const [data, setData] = useState<InventarisProps>({} as InventarisProps);
 
   useEffect(() => {
-    fetch(`http://localhost:8080/api/inventaris/${id}`)
+    fetch(`http://localhost:8081/api/inventaris/${id}`)
       .then((response) => {
         console.log(response);
         if (!response.ok) {
@@ -17,5 +17,8 @@ export function InventarisContent() {
       })
       .then((json) => setData(json));
   }, []);
+
+
+
   return <InventarisLayout {...data} />;
 }

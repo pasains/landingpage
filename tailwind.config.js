@@ -8,6 +8,7 @@ module.exports = {
       "bold-orange": "#FF6633",
       "light-orange": "#F8972F",
       brown: "#CF9C82",
+        gray: "71717a"
     },
     extend: {},
     fontSize: {
@@ -27,9 +28,9 @@ module.exports = {
       md: "25px",
       lg: "30px",
       xl: "50px",
-      "2xl": "60px",
-      "3xl": "90px",
-      "4xl": "120px",
+      "2xl": "100px",
+      "3xl": "150px",
+      "4xl": "200px",
     },
     size: {
       xsm: "90px",
