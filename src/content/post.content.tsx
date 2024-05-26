@@ -7,7 +7,7 @@ export function Post() {
   const [data, setData] = useState<PostProps>({} as PostProps);
 
   useEffect(() => {
-    fetch(`http://localhost:8080/api/post/${page}`)
+    fetch(`http://localhost:8081/api/post/${page}`)
       .then((response) => {
         console.log(response);
         if (!response.ok) {
@@ -17,5 +17,6 @@ export function Post() {
       })
       .then((json) => setData(json));
   }, []);
-  return <PostLayout {...data} />;
+
+return <PostLayout {...data} />;
 }
