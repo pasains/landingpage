@@ -10,6 +10,10 @@ module.exports = {
       brown: "#CF9C82",
         gray: "71717a"
     },
+    fontFamily: {
+    redditmono: ["Reddit Mono"],
+    nunito: ["Nunito"]
+    },
     extend: {},
     fontSize: {
       sm: "12px",
