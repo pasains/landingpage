@@ -68,9 +68,6 @@ export function Bottom() {
           </div>
         </div>
       </div>
-
-      {/* MEDIA SOCIAL  */}
-      <div></div>
     </div>
   );
 }
