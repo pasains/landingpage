@@ -4,66 +4,69 @@ import { FiYoutube } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 
 export function Bottom() {
+  const media_socials = [
+    {
+      icon: <FaInstagram />,
+      link: "https://www.instagram.com/pasains96/",
+    },
+    {
+      icon: <FaFacebook />,
+      link: "https://www.facebook.com/pasains.fmipa/",
+    },
+    {
+      icon: <FaXTwitter />,
+      link: "https://twitter.com/pasains96",
+    },
+    {
+      icon: <FiYoutube />,
+      link: "https://www.youtube.com/@PasainsUGM",
+    },
+    {
+      icon: <PiTiktokLogo />,
+      link: "https://www.tiktok.com/@pasains",
+    },
+  ];
   return (
-    <div className="flex flex-row max-w-full w-full mt-[60px] bg-black static bottom-0 place-content-center">
-      <div className="flex flex-col">
-        <div>
+    <div className="bg-black p-5 max-w-full static bottom-0 container mx-auto mt-5 font-light">
+      {/* LOGO and ADRESS */}
+      <div className="flex space-x-xsm justify-between">
+        <div className="flex flex-row items-center space-x-sm">
           <img
-            src={require("../../image/lambang.jpg")}
+            src={require("../../image/logo-modern.PNG")}
             alt="logopasains"
-            className="size-xsm mt-12 mb-6 mr-96 items-center"
+            className="size-xsm items-center"
           />
-        </div>
-        <div className="flex flex-row">
-          <div className="text-md font-extralight tracking-wide text-white mr-96 mb-12 space-y-xsm">
-            <h1>
-              {"Jalan Sains, Sekip Utara PO BOX 21"}
+          <div className="text-white text-sm">
+            <p>
+              Jalan Sains, Sekip Utara PO BOX 21
               <br />
-              <span>
-                {"Bulaksumur, Mlati, Sleman, Daerah Istimewa Yogyakarta, 55281"}
-              </span>
-            </h1>
-            <h1>pasains.mipa@mail.ugm.ac.id </h1>
-            <h2>+62 123-4567-7890</h2>
+              Bulaksumur, Mlati, Sleman, Daerah Istimewa Yogyakarta, 55281
+              <br />
+              <a
+                href="mailto:pasains.mipa@mail.ugm.ac.id"
+                className="font-normal"
+                target="__blank"
+              >
+                pasains.mipa@mail.ugm.ac.id
+              </a>
+              <p className="font-normal">+62 123-4567-7890</p>
+            </p>
           </div>
         </div>
-      </div>
-      <div className="mt-12 space-y-md text-md text-white font-light tracking-wide ml-96">
-        <a
-          href="https://www.instagram.com/pasains96/"
-          className="flex flex-row items-center"
-        >
-          <FaInstagram className="mr-3" />
-          INSTAGRAM
-        </a>
-        <a
-          href="https://www.facebook.com/pasains.fmipa/"
-          className="flex flex-row items-center"
-        >
-          <FaFacebook className="mr-3" />
-          FACEBOOK
-        </a>
-        <a
-          href="https://twitter.com/pasains96"
-          className="flex flex-row items-center"
-        >
-          <FaXTwitter className="mr-3" />
-          X/TWITTER
-        </a>
-        <a
-          href="https://www.youtube.com/@PasainsUGM"
-          className="flex flex-row items-center"
-        >
-          <FiYoutube className="mr-3" />
-          YOUTUBE
-        </a>
-        <a
-          href="https://www.tiktok.com/@pasains"
-          className="flex flex-row items-center"
-        >
-          <PiTiktokLogo className="mr-3" />
-          TIKTOK
-        </a>
+        <div className="text-white space-md">
+          <p className="text-sm">Follow Us</p>
+          <div className="flex flex-row space-x-sm my-5">
+            {media_socials.map((media) => {
+              return (
+                <div key={media.link} className="rounded-full border p-2">
+                  <a href={media.link} target="__blank">
+                    {media.icon}
+                  </a>
+                </div>
+              );
+            })}
+          </div>
+        </div>
       </div>
     </div>
   );
