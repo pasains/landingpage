@@ -17,35 +17,38 @@ export function Home() {
         }
         return response.json();
       })
-      .then((json) => setTitle(json));
+      .then((json) => setTitle(json))
+      .catch((error: any) => {
+        console.log(error);
+      });
   }, []);
 
   const totalPages = size / 6;
 
-  const nextPage=() => {
+  const nextPage = () => {
     const nextPage = page + 1;
     setPage(nextPage);
     fetch(`http://localhost:8081/api/post/?size=6&page=${nextPage}`)
       .then((response) => {
-      if (!response.ok) {
-        throw new Error ("Not Found");
-      }
-      return response.json();
-    })
-    .then((json) => setTitle(json))
-  }
-  const prevPage=() => {
+        if (!response.ok) {
+          throw new Error("Not Found");
+        }
+        return response.json();
+      })
+      .then((json) => setTitle(json));
+  };
+  const prevPage = () => {
     const prevPage = page - 1;
     setPage(prevPage);
     fetch(`http://localhost:8081/api/post/?size=6&page=${prevPage}`)
       .then((response) => {
-      if (!response.ok) {
-        throw new Error ("Not Found");
-      }
-      return response.json();
-    })
-    .then((json) => setTitle(json))
-  }
+        if (!response.ok) {
+          throw new Error("Not Found");
+        }
+        return response.json();
+      })
+      .then((json) => setTitle(json));
+  };
 
   return (
     <div>
@@ -92,13 +95,15 @@ export function Home() {
             })}
           </div>
           <div className="items-center mx-auto  font-light text-md text-center mt-[30px] space-x-md">
-          <button onClick={prevPage} disabled={page === 1}>Prev</button>
-          <button>{page}</button>
-          <button onClick={nextPage} disabled={page === totalPages}>Next</button>
+            <button onClick={prevPage} disabled={page === 1}>
+              Prev
+            </button>
+            <button>{page}</button>
+            <button onClick={nextPage} disabled={page === totalPages}>
+              Next
+            </button>
           </div>
-          <div>
-            <Bottom />
-          </div>
+          <Bottom />
         </div>
       </div>
     </div>
