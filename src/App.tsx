@@ -1,20 +1,20 @@
 import { Routes, Route } from "react-router-dom";
 import { Home } from "./pages/home";
 import { About } from "./pages/about";
-import { Inventaris } from "./pages/inventaris";
-import { Kepengurusan } from "./pages/kepengurusan";
+import { Galleries } from "./pages/galleries"
+import { Organization } from "./pages/organization"
 import { Post } from "./content/post.content";
-import { InventarisContent } from "./content/inventaris.content";
+import { ContactUs } from "./pages/contactus"
 
 function App() {
   return (
-    <div className="bg-sky-950">
+    <div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/kepengurusan" element={<Kepengurusan />} />
-        <Route path="/inventaris" element={<Inventaris />} />
-        <Route path="/inventaris/:id" element={<InventarisContent />} />
+        <Route path="/organization" element={<Organization />} />
+        <Route path="/galleries" element={<Galleries />} />
+        <Route path="/contactus" element={<ContactUs />} />
         <Route path="/post/:page" element={<Post />} />
       </Routes>
     </div>
