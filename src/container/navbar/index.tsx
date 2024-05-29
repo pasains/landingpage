@@ -9,13 +9,13 @@ export function NavBar() {
       <NavLink  to="/about">
         <div>About</div>
       </NavLink>
-      <NavLink  to="/kepengurusan">
+      <NavLink  to="/organization">
         <div>Organization</div>
       </NavLink>
-      <NavLink  to="/inventaris">
+      <NavLink  to="/galleries">
         <div>Galleries</div>
       </NavLink>
-      <NavLink  to="/inventaris">
+      <NavLink  to="/contactus">
         <div>Contact Us</div>
       </NavLink>
     </nav>

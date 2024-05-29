@@ -1,51 +1,12 @@
-import { Heading } from "../container/heading";
-import { useEffect, useState } from "react";
+import React from "react";
+import { Layout } from "../layout";
 import { NavLink } from "react-router-dom";
-import { PostProps } from "../layout/post.layout";
+import useHome from "../hooks/home.hooks";
+import { Heading } from "../container/heading";
 import { Bottom } from "../container/bottom";
 
 export function Home() {
-  const [title, setTitle] = useState<PostProps[]>([]);
-  const [page, setPage] = useState(1);
-  const [size] = useState(12);
-
-  useEffect(() => {
-    fetch(`http://localhost:8081/api/post/?size=6&page1`)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Not found!");
-        }
-        return response.json();
-      })
-      .then((json) => setTitle(json));
-  }, []);
-
-  const totalPages = size / 6;
-
-  const nextPage = () => {
-    const nextPage = page + 1;
-    setPage(nextPage);
-    fetch(`http://localhost:8081/api/post/?size=6&page=${nextPage}`)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Not Found");
-        }
-        return response.json();
-      })
-      .then((json) => setTitle(json));
-  };
-  const prevPage = () => {
-    const prevPage = page - 1;
-    setPage(prevPage);
-    fetch(`http://localhost:8081/api/post/?size=6&page=${prevPage}`)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error("Not Found");
-        }
-        return response.json();
-      })
-      .then((json) => setTitle(json));
-  };
+  const { totalPages, nextPage, prevPage, title, page } = useHome();
 
   return (
     <div>
