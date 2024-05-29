@@ -48,7 +48,7 @@ let kepengurusanData = [
 
 export function KepengurusanContent() {
   return (
-      <div className="container mt-[60px] mx-auto items-center text-center">
+      <div className="font-nunito container mt-[60px] mx-auto items-center text-center">
     <div className="text-bold-orange text-xl tracking-wide font-bold">
       Pengurus Harian PASAINS Periode 2024
       </div>

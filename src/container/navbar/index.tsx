@@ -2,18 +2,21 @@ import { NavLink } from "react-router-dom";
 
 export function NavBar() {
   return (
-    <nav className="flex flex-row ml-[240px] items-center text-md text-black font-semibold">
-      <NavLink className="ml-6" to="/">
+    <nav className="flex space-x-md text-md font-nunito font-semibold">
+      <NavLink to="/">
         <div>Home</div>
       </NavLink>
-      <NavLink className="ml-6" to="/about">
+      <NavLink  to="/about">
         <div>About</div>
       </NavLink>
-      <NavLink className="ml-6" to="/kepengurusan">
-        <div>Kepengurusan</div>
+      <NavLink  to="/kepengurusan">
+        <div>Organization</div>
       </NavLink>
-      <NavLink className="ml-6" to="/inventaris">
-        <div>Inventaris</div>
+      <NavLink  to="/inventaris">
+        <div>Galleries</div>
+      </NavLink>
+      <NavLink  to="/inventaris">
+        <div>Contact Us</div>
       </NavLink>
     </nav>
   );
