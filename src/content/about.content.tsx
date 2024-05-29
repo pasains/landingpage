@@ -1,6 +1,4 @@
 import { Description } from "../components/description";
-import { Title } from "../components/title";
-import MiniCard from "../container/minicard";
 
 export function AboutContent() {
   return (
