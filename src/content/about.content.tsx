@@ -4,7 +4,7 @@ import MiniCard from "../container/minicard";
 
 export function AboutContent() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col font-nunito">
       <div className="mt-6 text-justify mx-auto place-content-center w-[720px]">
         <h1 className="text-lg text-center text-bold-orange">
           Apa itu PASAINS?
