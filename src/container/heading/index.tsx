@@ -5,7 +5,7 @@ export function Heading() {
     <div className="flex max-w-full justify-between items-center p-[25px] bg-white mx-auto font-nunito container fixed top-0">
       <div>
         <img
-          src={require("../../image/logo.png")}
+          src={require("../../image/logopasains.png")}
           alt="logopasains"
           className="size-xsm"
         />
