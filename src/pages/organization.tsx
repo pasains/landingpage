@@ -1,10 +1,10 @@
-import { OrganizationContent } from "../content/organization.content";
+import { OrganizationContent } from "../content/organization/index";
 import { Layout } from "../layout";
 
 export function Organization() {
   return (
     <Layout>
-      <div className="flex flex-col pt-[120px] mb-[50px]">
+      <div className="flex flex-col mt-[80px] p-[90px] bg-pattren">
         <div>
           <OrganizationContent />
         </div>

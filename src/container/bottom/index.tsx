@@ -28,14 +28,13 @@ export function Bottom() {
     },
   ];
   return (
-    <div className="bg-black p-[25px] max-w-full static bottom-0 container mx-auto font-nunito font-light">
-      {/* LOGO and ADRESS */}
+    <div className="bg-black py-[10px] px-[25px] max-w-full absoulte left-0 right-0 bottom-0 container mx-auto font-nunito font-light">
       <div className="flex space-x-xsm justify-between">
         <div className="flex flex-row items-center space-x-sm">
           <img
             src={require("../../image/logo-modern.PNG")}
             alt="logopasains"
-            className="size-xsm items-center"
+            className="size-sm items-center"
           />
           <div className="text-white text-sm">
             <p>
