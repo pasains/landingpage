@@ -6,16 +6,16 @@ export function NavBar() {
       <NavLink to="/">
         <div>Home</div>
       </NavLink>
-      <NavLink  to="/about">
+      <NavLink to="/about">
         <div>About</div>
       </NavLink>
-      <NavLink  to="/organization">
+      <NavLink to="/organization">
         <div>Organization</div>
       </NavLink>
-      <NavLink  to="/galleries">
+      <NavLink to="/galleries">
         <div>Galleries</div>
       </NavLink>
-      <NavLink  to="/contactus">
+      <NavLink to="/contactus">
         <div>Contact Us</div>
       </NavLink>
     </nav>
