@@ -1,7 +1,7 @@
 import React from "react";
 import {Layout} from "../layout";
 import { NavLink } from "react-router-dom";
-import useHome from "../hooks/home.hooks"
+import useHome from "../hooks/home/index"
 
 export function Home() {
 const { totalPages, nextPage, prevPage, title, page} = useHome();
@@ -9,7 +9,7 @@ const { totalPages, nextPage, prevPage, title, page} = useHome();
   return (
     <Layout>
       <div className="font-nunito">
-        <div className="pt-[120px] max-w-full justify-items-center mx-auto text-center">
+        <div className="pt-[90px] max-w-full justify-items-center mx-auto text-center">
           <div className="bg-gunung bg-center place-content-center h-[640px] mx-auto max-w-full">
           <div className="bg-black bg-opacity-40 h-[640px] mx-auto place-content-center max-w-full">
             <h1 className="text-2xl text-white font-bold leading-tight tracking-widest">
@@ -25,7 +25,7 @@ const { totalPages, nextPage, prevPage, title, page} = useHome();
           <div className="text-xl font-bold py-[50px] text-bold-orange">
             KEGIATAN TERBARU
           </div>
-          <div className="grid grid-cols-3 mb-[60px]  place-items-center">
+          <div className="grid grid-cols-3 mb-[50px]  place-items-center">
             {title.map((item) => {
               return (
                 <div key={item.id}>
