@@ -67,7 +67,7 @@ export function Bottom() {
             })}
           </div>
           <div>
-          <ScrollToTopButton />
+            <ScrollToTopButton />
           </div>
         </div>
       </div>
