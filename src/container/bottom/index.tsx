@@ -4,29 +4,30 @@ import { FiYoutube } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
 import ScrollToTopButton from "../../components/scrollbutton";
 
+const media_socials = [
+  {
+    icon: <FaInstagram size={15} />,
+    link: "https://www.instagram.com/pasains96/",
+  },
+  {
+    icon: <FaFacebook size={15} />,
+    link: "https://www.facebook.com/pasains.fmipa/",
+  },
+  {
+    icon: <FaXTwitter size={15} />,
+    link: "https://twitter.com/pasains96",
+  },
+  {
+    icon: <FiYoutube size={15} />,
+    link: "https://www.youtube.com/@PasainsUGM",
+  },
+  {
+    icon: <PiTiktokLogo size={15} />,
+    link: "https://www.tiktok.com/@pasains",
+  },
+];
+
 export function Bottom() {
-  const media_socials = [
-    {
-      icon: <FaInstagram size={15} />,
-      link: "https://www.instagram.com/pasains96/",
-    },
-    {
-      icon: <FaFacebook size={15} />,
-      link: "https://www.facebook.com/pasains.fmipa/",
-    },
-    {
-      icon: <FaXTwitter size={15} />,
-      link: "https://twitter.com/pasains96",
-    },
-    {
-      icon: <FiYoutube size={15} />,
-      link: "https://www.youtube.com/@PasainsUGM",
-    },
-    {
-      icon: <PiTiktokLogo size={15} />,
-      link: "https://www.tiktok.com/@pasains",
-    },
-  ];
   return (
     <div className="bg-black py-[10px] px-[25px] max-[600px]:px-[10] max-w-full absoulte left-0 right-0 bottom-0 container mx-auto font-nunito font-light">
       <div className="flex space-x-xsm justify-between max-[600px]:flex-wrap">
