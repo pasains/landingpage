@@ -7,29 +7,29 @@ import ScrollToTopButton from "../../components/scrollbutton";
 export function Bottom() {
   const media_socials = [
     {
-      icon: <FaInstagram />,
+      icon: <FaInstagram size={15} />,
       link: "https://www.instagram.com/pasains96/",
     },
     {
-      icon: <FaFacebook />,
+      icon: <FaFacebook size={15} />,
       link: "https://www.facebook.com/pasains.fmipa/",
     },
     {
-      icon: <FaXTwitter />,
+      icon: <FaXTwitter size={15} />,
       link: "https://twitter.com/pasains96",
     },
     {
-      icon: <FiYoutube />,
+      icon: <FiYoutube size={15} />,
       link: "https://www.youtube.com/@PasainsUGM",
     },
     {
-      icon: <PiTiktokLogo />,
+      icon: <PiTiktokLogo size={15} />,
       link: "https://www.tiktok.com/@pasains",
     },
   ];
   return (
-    <div className="bg-black py-[10px] px-[25px] max-w-full absoulte left-0 right-0 bottom-0 container mx-auto font-nunito font-light">
-      <div className="flex space-x-xsm justify-between">
+    <div className="bg-black py-[10px] px-[25px] max-[600px]:px-[10] max-w-full absoulte left-0 right-0 bottom-0 container mx-auto font-nunito font-light">
+      <div className="flex space-x-xsm justify-between max-[600px]:flex-wrap">
         <div className="flex flex-row items-center space-x-sm">
           <img
             src={require("../../image/logo-modern.PNG")}
@@ -55,10 +55,13 @@ export function Bottom() {
         </div>
         <div className="text-white space-md">
           <p className="text-sm">Follow Us</p>
-          <div className="flex flex-row space-x-sm my-5">
+          <div className="flex flex-row space-x-sm my-3">
             {media_socials.map((media) => {
               return (
-                <div key={media.link} className="rounded-full border p-2">
+                <div
+                  key={media.link}
+                  className="rounded-full border p-1 hover:border-black hover:scale-150"
+                >
                   <a href={media.link} target="__blank">
                     {media.icon}
                   </a>
