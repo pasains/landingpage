@@ -1,10 +1,10 @@
 import { Routes, Route } from "react-router-dom";
 import { Home } from "./pages/home";
 import { About } from "./pages/about";
-import InstagramFeed from "./pages/galleries"
-import { Organization } from "./pages/organization"
+import InstagramFeed from "./pages/galleries";
+import { Organization } from "./pages/organization";
 import { Post } from "./hooks/post";
-import { ContactUs } from "./pages/contactus"
+import { ContactUs } from "./pages/contactus";
 
 function App() {
   return (

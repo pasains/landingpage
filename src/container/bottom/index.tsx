@@ -33,7 +33,7 @@ export function Bottom() {
       <div className="flex space-x-xsm justify-between max-[600px]:flex-wrap">
         <div className="flex flex-row items-center space-x-sm">
           <img
-            src={require("../../image/logo-modern.PNG")}
+            src={require("../../image/logo-modern.png")}
             alt="logopasains"
             className="size-sm items-center"
           />
