@@ -6,17 +6,15 @@ const InstagramFeed: React.FC = () => {
   const [posts, setPosts] = useState<any[]>([]);
 
   useEffect(() => {
-    // Make a request to the Instagram API
     axios
       .get("https://graph.instagram.com/me/media", {
         params: {
           fields: "id,media_type,media_url,thumbnail_url,caption",
           access_token:
-            "IGQWROQ2lRekt5SUs4RGI0YXF1Tl9tNlRJb1Nxb0JMemR6N3gyU0xKR25vbXFtYXVSQVRYem44OVJnSHp1ZA3RNakJjNFU1cE12S053NVdXVk9XZA2FPcmVDRVRGYXZApMFpoR3hwNTRZAUXhpelZABeUxVV1BfVGtKSEEZD", // Replace with your access token
+            "IGQWROSU9RZAExWZAzhQUHB3aHpZANVBMZAENMWTRJQmxIckZAZATG42V3AyNm1uZA1kzUkhFNmUzSWVHWENKRzJZAcXZADMnhsdWxVWEo2eVFCRmZASLWw3WGRRYU9kVXlXMFhZAMG83WkUyYTRLdWJwZAVVHN1FFNElPc1B0WWsZD",
         },
       })
       .then((response) => {
-        // Set the retrieved posts in state
         setPosts(response.data.data);
       })
       .catch((error) => {
@@ -26,19 +24,20 @@ const InstagramFeed: React.FC = () => {
 
   return (
     <Layout>
-      <div className="pt-[90px] p-[50px] my-[50px]">
+      <div className="pt-[90px] p-[50px] my-[50px] scroll-smooth focus:scroll-auto">
         <h2
           className="
         mb-[50px] text-center text-xl font-bold text-bold-orange
         "
         >
-          Instagram Feed
+          Our Instagram Feed
         </h2>
         <div className="grid grid-cols-3 gap-[50px]">
           {posts.map((post) => (
             <div key={post.id}>
-              <img className="mb-[10px]" src={post.media_url} alt={post.caption} />
-              <p>{post.caption}</p>
+              <img
+                src={post.media_url} alt="media"
+              />
             </div>
           ))}
         </div>

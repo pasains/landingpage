@@ -2,12 +2,14 @@ import { Layout } from "../layout";
 import { MdPlace } from "react-icons/md";
 import { MdEmail } from "react-icons/md";
 import { MdPhone } from "react-icons/md";
+import RefreshTop from "../components/refreshtop";
 
 export function ContactUs() {
   return (
     <Layout>
-      <section className="bg-light-orange w-full pt-[90px] font-nunito h-[600px]">
-        <h1 className="text-2xl text-white text-center mt-[50px] tracking-tight font-bold">
+      <RefreshTop />
+      <section className="bg-gradient-to-tr from-bold-orange to-light-orange w-full pt-[90px] font-nunito h-[600px] scroll-smooth focus:scroll-auto">
+        <h1 className="text-2xl text-white text-center mt-[60px] tracking-tight font-bold">
           GET IN TOUCH
         </h1>
         <div className="flex flex-cols mt-[50px] text-center">
