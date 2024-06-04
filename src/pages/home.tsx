@@ -38,7 +38,7 @@ export function Home() {
                 Tahapan pendidikan calon anggota PASAINS
               </p>
               <div className="border border-light-orange w-[100px] mx-auto place-content-center"></div>
-              <div className="flex flex-cols mt-[40px] mb-[80px] container items-center place-content-center mx-auto gap-[230px] w-full">
+              <div className="flex flex-cols mt-[40px] mb-[80px] container items-center place-content-center mx-auto gap-[150px] w-full">
                 <div className="space-y-[10px] w-[200px] ">
                   <GiHiking className="size-[90px] hover:opacity-75 hover:scale-110  fill-light-orange place-content-center mx-auto" />
                   <div className="text-md font-bold">PENDIDIKAN DASAR</div>
