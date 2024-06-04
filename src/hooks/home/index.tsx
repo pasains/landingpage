@@ -6,9 +6,11 @@ export default function useHome() {
   const [page, setPage] = useState(1);
   const [size] = useState(12);
 
+  const PORTAL_BE_URL = process.env.PORTAL_BE_URL || "http://localhost:8081";
+
   useEffect(() => {
     function fetchTitle() {
-    fetch(`http://localhost:8081/api/post/?size=3&page=1`)
+    fetch(`${PORTAL_BE_URL}/api/post/?size=3&page=1`)
       .then((response) => {
       console.log(response);
         if (!response.ok) {
@@ -30,7 +32,7 @@ export default function useHome() {
   const nextPage = () => {
     const nextPage = page + 1;
     setPage(nextPage);
-    fetch(`http://localhost:8081/api/post/?size=3&page=${nextPage}`)
+    fetch(`${PORTAL_BE_URL}/api/post/?size=3&page=${nextPage}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Not Found");
@@ -43,7 +45,7 @@ export default function useHome() {
   const prevPage = () => {
     const prevPage = page - 1;
     setPage(prevPage);
-    fetch(`http://localhost:8081/api/post/?size=3&page=${prevPage}`)
+    fetch(`${PORTAL_BE_URL}/api/post/?size=3&page=${prevPage}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Not Found");
