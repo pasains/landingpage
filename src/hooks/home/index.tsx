@@ -1,4 +1,4 @@
-import {PostProps} from "../../content/post"
+import { PostProps } from "../../content/post";
 import { useEffect, useState } from "react";
 
 export default function useHome() {
@@ -6,25 +6,26 @@ export default function useHome() {
   const [page, setPage] = useState(1);
   const [size] = useState(12);
 
-  const PORTAL_BE_URL = process.env.PORTAL_BE_URL || "http://localhost:8081";
+  const REACT_APP_PORTAL_BE_URL =
+    process.env.REACT_APP_PORTAL_BE_URL || "http://localhost:8081";
 
   useEffect(() => {
     function fetchTitle() {
-    fetch(`${PORTAL_BE_URL}/api/post/?size=3&page=1`)
-      .then((response) => {
-      console.log(response);
-        if (!response.ok) {
-          throw new Error("Not found!");
-        }
-        return response.json();
-      })
-      .then((json) => setTitle(json))
-      .catch((error: any) => {
-        console.log(error);
-      });
+      fetch(`${REACT_APP_PORTAL_BE_URL}/api/post/?size=3&page=1`)
+        .then((response) => {
+          console.log(response);
+          if (!response.ok) {
+            throw new Error("Not found!");
+          }
+          return response.json();
+        })
+        .then((json) => setTitle(json))
+        .catch((error: any) => {
+          console.log(error);
+        });
     }
     fetchTitle();
-    return () => {}
+    return () => {};
   }, []);
 
   const totalPages = size / 3;
@@ -32,7 +33,7 @@ export default function useHome() {
   const nextPage = () => {
     const nextPage = page + 1;
     setPage(nextPage);
-    fetch(`${PORTAL_BE_URL}/api/post/?size=3&page=${nextPage}`)
+    fetch(`${REACT_APP_PORTAL_BE_URL}/api/post/?size=3&page=${nextPage}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Not Found");
@@ -45,7 +46,7 @@ export default function useHome() {
   const prevPage = () => {
     const prevPage = page - 1;
     setPage(prevPage);
-    fetch(`${PORTAL_BE_URL}/api/post/?size=3&page=${prevPage}`)
+    fetch(`${REACT_APP_PORTAL_BE_URL}/api/post/?size=3&page=${prevPage}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Not Found");
@@ -55,7 +56,11 @@ export default function useHome() {
       .then((json) => setTitle(json));
   };
 
-return {
-  title, nextPage, prevPage, page, totalPages
-}
+  return {
+    title,
+    nextPage,
+    prevPage,
+    page,
+    totalPages,
   };
+}

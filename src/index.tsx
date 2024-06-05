@@ -7,8 +7,6 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-console.log(process.env);
-
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement,
 );
