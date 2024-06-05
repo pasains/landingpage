@@ -6,12 +6,12 @@ export function Post() {
   const { page } = useParams();
   const [data, setData] = useState<PostProps>({} as PostProps);
 
-  const PORTAL_BE_URL = process.env.PORTAL_BE_URL || "http://localhost:8081";
+  const REACT_APP_PORTAL_BE_URL =
+    process.env.REACT_APP_PORTAL_BE_URL || "http://localhost:8081";
 
   useEffect(() => {
-    console.log("GPS" + process.env.PORTAL_BE_URL);
     function fetchData() {
-      fetch(`${PORTAL_BE_URL}/api/post/${page}`)
+      fetch(`${REACT_APP_PORTAL_BE_URL}/api/post/${page}`)
         .then((response) => {
           console.log(response);
           if (!response.ok) {
