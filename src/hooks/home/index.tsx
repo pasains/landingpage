@@ -1,4 +1,4 @@
-import { PostProps } from "../../content/post";
+import { PostProps } from "../../pages/post";
 import { useEffect, useState } from "react";
 
 export default function useHome() {

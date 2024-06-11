@@ -8,13 +8,13 @@ export function ContactUs() {
   return (
     <Layout>
       <RefreshTop />
-      <section className="bg-gradient-to-tr from-bold-orange to-light-orange w-full pt-[90px] font-nunito h-[600px] scroll-smooth focus:scroll-auto">
+      <section className="bg-gradient-to-tr from-bold-orange to-light-orange w-full pt-[90px] font-nunito h-[600px] scroll-14ooth focus:scroll-auto">
         <h1 className="text-2xl text-white text-center mt-[60px] tracking-tight font-bold">
           GET IN TOUCH
         </h1>
         <div className="flex flex-cols mt-[50px] text-center">
           <div className="mx-auto">
-            <MdPlace className="rounded-full p-4 bg-white opacity-75 transition duration-300 hover:bg-bold-orange size-sm place-content-center mx-auto" />
+            <MdPlace className="rounded-full p-4 bg-white opacity-75 transition duration-300 hover:bg-bold-orange size-14 place-content-center mx-auto" />
             <h1 className="my-[10px] text-lg tracking-tight text-white font-bold">
               ADDRESS
             </h1>
@@ -27,7 +27,7 @@ export function ContactUs() {
             </p>
           </div>
           <div className="mx-auto">
-            <MdPhone className="rounded-full p-4 bg-white opacity-75 transition duration-300 hover:bg-bold-orange size-sm place-content-center mx-auto" />
+            <MdPhone className="rounded-full p-4 bg-white opacity-75 transition duration-300 hover:bg-bold-orange size-14 place-content-center mx-auto" />
             <h1 className="my-[10px] text-lg tracking-tight text-white font-bold">
               PHONE
             </h1>
@@ -41,7 +41,7 @@ export function ContactUs() {
             </p>
           </div>
           <div className="mx-auto">
-            <MdEmail className="rounded-full p-4 bg-white opacity-75 transition duration-300 hover:bg-bold-orange size-sm place-content-center mx-auto" />
+            <MdEmail className="rounded-full p-4 bg-white opacity-75 transition duration-300 hover:bg-bold-orange size-14 place-content-center mx-auto" />
             <h1 className="my-[10px] text-lg tracking-tight text-white font-bold">
               EMAIL
             </h1>
@@ -69,19 +69,19 @@ export function ContactUs() {
           </p>
         </div>
         <div className="text-md font-semibold opacity-75 space-y-lg">
-          <div className="space-y-sm">
+          <div className="space-y-14">
             <h1>Name</h1>
             <button className="container border-2 w-[250px] h-[32px]"></button>
           </div>
-          <div className="space-y-sm">
+          <div className="space-y-14">
             <h2>Organization Name</h2>
             <button className="container border-2 w-[250px] h-[32px]"></button>
           </div>
-          <div className="space-y-sm">
+          <div className="space-y-14">
             <h3>Email</h3>
             <button className="container border-2 w-[250px] h-[32px]"></button>
           </div>
-          <div className="space-y-sm">
+          <div className="space-y-14">
             <h4>Comments</h4>
             <button className="container border-2 w-[500px] h-[150px]"></button>
           </div>
