@@ -2,7 +2,6 @@ import { FaInstagram, FaFacebook } from "react-icons/fa";
 import { PiTiktokLogo } from "react-icons/pi";
 import { FiYoutube } from "react-icons/fi";
 import { FaXTwitter } from "react-icons/fa6";
-import ScrollToTopButton from "../../components/scrollbutton";
 
 const media_socials = [
   {
@@ -33,9 +32,9 @@ export function Bottom() {
       <div className="flex space-x-xsm justify-between max-[600px]:flex-wrap">
         <div className="flex flex-row items-center space-x-sm">
           <img
-            src={require("../../image/logo-modern.png")}
+            src={require("../../image/logomoodern.png")}
             alt="logopasains"
-            className="size-sm items-center"
+            className="size-16 w-fit items-center"
           />
           <div className="text-white text-sm">
             <p>
@@ -69,9 +68,6 @@ export function Bottom() {
                 </div>
               );
             })}
-          </div>
-          <div>
-            <ScrollToTopButton />
           </div>
         </div>
       </div>
