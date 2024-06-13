@@ -55,9 +55,9 @@ const Heading: React.FC = () => {
 
   return (
     <div
-      className={`w-full fixed top-0 z-10 ${isScroll ? "bg-white" : "bg-transparent"} ${isScroll ? "text-black" : "text-white"} ${isOpen ? "bg-white" : "bg-transparent"}`}
+      className={`w-full fixed top-0 z-10 ${isScroll ? "bg-white" : "bg-transparent"} ${isOpen ? "bg-white" : "bg-transparent"}`}
     >
-      <div className="max-w-full mx-auto p-2 md:p-4">
+      <div className="mx-auto p-4 md:p-6">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <Link to="/">

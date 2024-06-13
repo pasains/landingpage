@@ -11,7 +11,7 @@ export default function useHome() {
 
   useEffect(() => {
     function fetchTitle() {
-      fetch(`${REACT_APP_PORTAL_BE_URL}/api/post/?size=3&page=1`)
+      fetch(`${REACT_APP_PORTAL_BE_URL}/api/post/?size=4&page=1`)
         .then((response) => {
           console.log(response);
           if (!response.ok) {
@@ -28,12 +28,12 @@ export default function useHome() {
     return () => {};
   }, []);
 
-  const totalPages = size / 3;
+  const totalPages = size / 4;
 
   const nextPage = () => {
     const nextPage = page + 1;
     setPage(nextPage);
-    fetch(`${REACT_APP_PORTAL_BE_URL}/api/post/?size=3&page=${nextPage}`)
+    fetch(`${REACT_APP_PORTAL_BE_URL}/api/post/?size=4&page=${nextPage}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Not Found");
@@ -46,7 +46,7 @@ export default function useHome() {
   const prevPage = () => {
     const prevPage = page - 1;
     setPage(prevPage);
-    fetch(`${REACT_APP_PORTAL_BE_URL}/api/post/?size=3&page=${prevPage}`)
+    fetch(`${REACT_APP_PORTAL_BE_URL}/api/post/?size=4&page=${prevPage}`)
       .then((response) => {
         if (!response.ok) {
           throw new Error("Not Found");
