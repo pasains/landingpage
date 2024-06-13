@@ -9,28 +9,28 @@ export function Post() {
       <div className="text-lg md:text-2xl mt-20 tracking-wider font-extrabold text-light-orange ">
         PUBLIKASI
       </div>
-      <p className=" text-md md:text-lg font-normal opacity-65 my-3 w-full md:w-1/2 md:my-5 mx-auto text-center">
+      <p className=" text-md md:text-lg font-normal opacity-65 my-3 w-full p-4 md:w-1/2 md:my-5 mx-auto text-center">
         Yuk, lihat update terbaru dari kegiatan PASAINS !
       </p>
-      <div className="border border-light-orange w-32 mx-auto place-content-center"></div>
-      <div className="grid grid-cols sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:mx-20 mt-12 place-items-center">
+      <div className="border border-light-orange w-32 mx-auto"></div>
+      <div className="container w-fit my-10 md:mt-20 mx-auto grid grid-cols md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-12 items-center">
         {title.map((item) => {
           return (
             <div key={item.id}>
-              <NavLink className="" to={`/post/${item.slug}`}>
-                <div className="w-[300px] md:w-[400px] mb-6">
+              <NavLink  to={`/post/${item.slug}`}>
+                <div className="w-80 bg-black bg-opacity-65 text-white transition hover:scale-110 shadow-2xl">
                   <img
-                    src={require("../../image/sumbing.jpg")}
+                    src={require("../../image/gh.jpg")}
                     alt="gunung"
-                    className="h-[280px] object-cover mb-3 shadow-2xl hover:scale-110 hover:opacity-70"
+                    className="h-[280px] w-full object-cover"
                   />
-                  <div className="h-[200px] text-left">
-                    <h1 className="text-md font-semibold">{item.title}</h1>
-                    <h2 className="text-sm font-light">{item.location}</h2>
-                    <p className="mt-[10px] text-md">
+                  <div className="h-[230px] text-left mx-2 mb:mx-4 my-4 md:my-6">
+                    <h1 className="text-sm font-extralight">POSTED ON 12 JUNE 2024</h1>
+                    <h2 className="text-md font-semibold uppercase">{item.title}</h2>
+                    <p className="text-md font-normal my-4 mb:my-8">
                       {item.content}
                       <br />
-                      <button className="text-light-orange transition duration-300 hover:scale-x-95">
+                      <button className="text-light-orange transition duration-300 hover:text-white">
                         {"baca selengkapnya"}
                       </button>
                     </p>

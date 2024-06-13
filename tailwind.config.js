@@ -29,6 +29,13 @@ module.exports = {
         mount2: "url('./image/ghghgh.jpg')",
         caving4: "url('./image/cvcvcvcv.jpg')",
       },
+        backdropBlur: {
+        xs: '2px',
+        sm: '4px',
+        md: '8px',
+        lg: '16px',
+        xl: '24px',
+      },
       space: {
         xsm: "5px",
         sm: "10px",

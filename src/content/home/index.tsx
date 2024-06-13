@@ -8,7 +8,7 @@ export function HomeContent() {
     <div>
       <section className="mx-auto max-w-full relative">
         <div className="bg-mount mx-auto bg-center bg-no-repeat bg-cover bg-fixed">
-          <div className="bg-black bg-opacity-40 h-screen place-content-center text-center md:text-left">
+          <div className="bg-black inset-0 bg-opacity-40 h-screen place-content-center text-center md:text-left">
             <h1 className="lg:text-5xl text-3xl text-white mx-auto p-4 md:p-6 font-bold leading-tight tracking-widest">
               NEVER <br /> ENDING <br />
               <span> BROTHERHOOD</span>
@@ -70,8 +70,8 @@ export function HomeContent() {
           keterampilan dan kepedulian anggota terhadap alam."
         </p>
         <div className="border border-light-orange w-32 mx-auto place-content-center"></div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mx-auto place-items-center my-10 md:my-20">
-          <div className="bg-mount2 h-[460px] md:h-[520px] md:w-[360px] bg-center bg-cover opacity-75 text-left mb-10">
+        <div className="container w-fit grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mx-auto place-items-center my-10 md:my-20">
+          <div className="bg-mount2 h-[460px] md:h-[520px] md:w-[360px] bg-center bg-cover opacity-75 text-left mb-10 hover:scale-110">
             <div className="bg-black bg-opacity-60 text-white h-[460px] md:h-[520px] place-content-center space-y-5">
               <GiMountaintop className="size-8 mx-10" />
               <h1 className="font-extrabold text-lg mx-10">GUNUNG & HUTAN</h1>
@@ -82,7 +82,7 @@ export function HomeContent() {
               </p>
             </div>
           </div>
-          <div className="bg-caving4 h-[460px] md:h-[520px] md:w-[360px] bg-cover opacity-75 text-left bg-center mb-10">
+          <div className="bg-caving4 h-[460px] md:h-[520px] md:w-[360px] bg-cover opacity-75 text-left bg-center mb-10 hover:scale-110">
             <div className="bg-black bg-opacity-60 text-white h-[460px] md:h-[520px] place-content-center space-y-5">
               <GiCaveEntrance className="size-8 mx-10" />
               <h1 className="font-extrabold text-lg mx-10">SUSUR GUA</h1>
@@ -93,7 +93,7 @@ export function HomeContent() {
               </p>
             </div>
           </div>
-          <div className="bg-climbing h-[460px] md:h-[520px] md:w-[360px] bg-cover opacity-75 bg-center text-left mb-10">
+          <div className="bg-climbing h-[460px] md:h-[520px] md:w-[360px] bg-cover opacity-75 bg-center text-left mb-10 hover:scale-110">
             <div className="bg-black bg-opacity-60 text-white h-[460px] md:h-[520px] place-content-center space-y-5">
               <GiMountainClimbing className="size-8 mx-10" />
               <h1 className="font-extrabold text-lg mx-10">PANJAT TEBING</h1>
@@ -104,7 +104,7 @@ export function HomeContent() {
               </p>
             </div>
           </div>
-          <div className="bg-nature h-[460px] md:h-[520px] md:w-[360px] bg-cover bg-center opacity-75 text-left mb-10">
+          <div className="bg-nature h-[460px] md:h-[520px] md:w-[360px] bg-cover bg-center opacity-75 text-left mb-10 hover:scale-110">
             <div className="bg-black bg-opacity-60 text-white h-[460px] md:h-[520px] place-content-center space-y-5">
               <GiPineTree className="size-8 mx-10" />
               <h1 className="font-extrabold text-lg mx-10">LINGKUNGAN HIDUP</h1>
@@ -118,9 +118,9 @@ export function HomeContent() {
         </div>
       </section>
       <section className="mx-auto max-w-full relative">
-        <div className="bg-caving2 mx-auto bg-right bg-cover bg-no-repeat bg-fixed">
+        <div className="bg-caving2 mx-auto bg-center bg-cover bg-no-repeat bg-fixed">
           <div className="bg-black bg-opacity-60 h-screen place-content-center text-center md:text-left">
-            <div className="font-normal  tracking-wider mb-4 text-lg text-white text-center">
+            <div className="font-normal  tracking-wider mb-4 p-4 text-lg text-white text-center">
               "A journey of a thousand miles begins with a single step."
             </div>
             <p className="text-lg tracking-wider font-bold text-light-orange text-center mb-6">
