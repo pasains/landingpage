@@ -6,7 +6,7 @@ export function Organization() {
   return (
     <Layout>
       <RefreshTop />
-      <div className="bg-pattren scroll-smooth focus:scroll-auto">
+      <div className="scroll-smooth focus:scroll-auto">
         <OrganizationContent />
       </div>
     </Layout>

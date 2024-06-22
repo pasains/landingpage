@@ -28,13 +28,13 @@ const media_socials = [
 
 export function Bottom() {
   return (
-    <div className="bg-black py-[10px] px-[25px] max-[600px]:px-[10] max-w-full absoulte left-0 right-0 bottom-0 container mx-auto font-nunito font-light">
+    <div className="bg-black py-3 md:px-6 px-4 max-w-full absoulte left-0 right-0 bottom-0 container mx-auto font-nunito font-light">
       <div className="flex space-x-xsm justify-between max-[600px]:flex-wrap">
         <div className="flex flex-row items-center space-x-sm">
           <img
             src={require("../../image/logomoodern.png")}
             alt="logopasains"
-            className="size-16 w-fit items-center"
+            className="size-16 object-contain items-center"
           />
           <div className="text-white text-sm">
             <p>
@@ -49,7 +49,7 @@ export function Bottom() {
               >
                 pasains.mipa@mail.ugm.ac.id
               </a>
-              <p className="font-normal">+62 123-4567-7890</p>
+              <p className="font-light">+62 123-4567-7890</p>
             </p>
           </div>
         </div>

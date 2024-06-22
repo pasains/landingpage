@@ -48,14 +48,14 @@ const Heading: React.FC = () => {
     },
     {
       id: 5,
-      title: "Contact",
+      title: "Contact Us",
       link: "/contactus",
     },
   ];
 
   return (
     <div
-      className={`w-full fixed top-0 z-10 ${isScroll ? "bg-white" : "bg-transparent"} ${isOpen ? "bg-white" : "bg-transparent"}`}
+      className={`w-full fixed top-0 z-0 ${isScroll ? "bg-white" : "bg-transparent"} ${isOpen ? "bg-white" : "bg-transparent"}`}
     >
       <div className="mx-auto p-4 md:p-6">
         <div className="flex items-center justify-between">
@@ -64,7 +64,7 @@ const Heading: React.FC = () => {
               <img
                 src={require("../../image/logo-pasains.png")}
                 alt="logopasains"
-                className="size-16 w-fit hover:opacity-75"
+                className="size-16 object-contain hover:opacity-75"
               />
             </Link>
           </div>

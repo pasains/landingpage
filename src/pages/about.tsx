@@ -6,10 +6,8 @@ export function About() {
   return (
     <Layout>
       <RefreshTop />
-      <div className="flex flex-col pt-[90px] bg-pattren scroll-smooth focus:scroll-auto">
-        <div className="w-full max-w-full">
+      <div className="pt-24 scroll-smooth focus:scroll-auto">
           <AboutContent />
-        </div>
       </div>
     </Layout>
   );
