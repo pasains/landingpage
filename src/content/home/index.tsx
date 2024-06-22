@@ -7,7 +7,7 @@ export function HomeContent() {
   return (
     <div>
       <section className="mx-auto max-w-full relative">
-        <div className="bg-mount bg-cover bg-center bg-no-repeat h-screen relative">
+        <div className="bg-mount bg-cover bg-center bg-no-repeat h-screen relative bg-fixed ios-bg-fix">
           <div className="bg-black bg-opacity-60 mx-auto place-content-center text-center h-screen md:text-left">
             <h1 className="lg:text-4xl md:text-3xl sm:text-3xl text-3xl text-white mx-auto p-4 md:p-6 font-bold leading-tight tracking-widest">
               NEVER <br /> ENDING <br />
@@ -119,7 +119,7 @@ export function HomeContent() {
         </div>
       </section>
       <section className="mx-auto max-w-full relative">
-        <div className="bg-caving2 bg-cover bg-center bg-no-repeat h-screen relative">
+        <div className="bg-caving2 bg-cover bg-center bg-no-repeat h-screen relative bg-fixed ios-bg-fix">
           <div className="bg-black bg-opacity-60 mx-auto place-content-center text-center h-screen">
             <div className="font-normal mx-auto tracking-wider mb-4 p-4 text-lg text-white">
               "A journey of a thousand miles begins with a single step."
