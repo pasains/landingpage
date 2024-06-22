@@ -7,8 +7,8 @@ export function HomeContent() {
   return (
     <div>
       <section className="mx-auto max-w-full relative">
-        <div className="bg-mount mx-auto bg-center h-[calc(100vh)] bg-no-repeat bg-cover bg-fixed w-full">
-          <div className="bg-black inset-0 absolute bg-opacity-40 h-[calc(100vh)] place-content-center text-center w-full md:text-left">
+        <div className="bg-mount bg-cover bg-center bg-no-repeat h-screen relative">
+          <div className="bg-black bg-opacity-60 mx-auto place-content-center text-center h-screen md:text-left">
             <h1 className="lg:text-4xl md:text-3xl sm:text-3xl text-3xl text-white mx-auto p-4 md:p-6 font-bold leading-tight tracking-widest">
               NEVER <br /> ENDING <br />
               <span> BROTHERHOOD</span>
@@ -119,8 +119,8 @@ export function HomeContent() {
         </div>
       </section>
       <section className="mx-auto max-w-full relative">
-        <div className="bg-caving2 w-full mx-auto h-[calc(100vh)] bg-center bg-cover bg-no-repeat bg-fixed">
-          <div className="bg-black bg-opacity-60 h-[calc(100vh)] mx-auto place-content-center text-center">
+        <div className="bg-caving2 bg-cover bg-center bg-no-repeat h-screen relative">
+          <div className="bg-black bg-opacity-60 mx-auto place-content-center text-center h-screen">
             <div className="font-normal mx-auto tracking-wider mb-4 p-4 text-lg text-white">
               "A journey of a thousand miles begins with a single step."
             </div>
