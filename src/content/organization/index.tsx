@@ -46,7 +46,7 @@ const organizationData = [
   },
   {
     title: "Sate",
-    description:"Dvisi Gunung Hutan",
+    description: "Dvisi Gunung Hutan",
     picture: require("../../image/te.png"),
   },
   {
@@ -128,29 +128,38 @@ const organizationData = [
 
 export function OrganizationContent() {
   return (
-    <div className="font-nunito container mt-[90px] mx-auto rounded-2xl py-[50px]">
-      <div className="text-bold-orange text-center text-2xl tracking-widest font-bold">
-        MEET OUR TEAM
-        <br />
-        <span>PASAINS 2024</span>
+    <div className="font-nunito mt-[90px] mx-auto">
+      <div className="flex text-bold-orange p-4 md:p-8 my-10 md:my-20 text-left text-lg md:text-4xl w-full tracking-wider font-extrabold">
+        <div className="relative flex-none w-12 md:w-16">
+          <div className="absolute bg-bold-orange w-12 h-12 md:w-16 md:h-16 z-20"></div>
+          <div className="absolute bg-light-orange left-5 md:left-10 top-5 md:top-10 w-12 h-12 md:w-16 md:h-16 z-30"></div>
+        </div>
+        <div className="text-center grow">
+        MEET OUR TEAM<br /> PASAINS 2024
+        </div>
+        <div className="relative flex-none w-12 md:w-16">
+          <div className="absolute bg-bold-orange right-0 w-12 h-12 md:w-16 md:h-16 z-20"></div>
+          <div className="absolute bg-light-orange right-5 md:right-10  top-5 md:top-10 w-12 h-12 md:w-16 md:h-16 z-30"></div>
+        </div>
       </div>
-      <div className="flex my-[60px] gap-[20px] flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center p-6 gap-6">
         {organizationData.map((data) => {
           return (
-            <div className="relative h-[420px] w-[340px]">
-              <div className="hover:bg-black bg-light-orange duration-300">
+            <div className="relative h-[420px] w-[340px] hover:scale-110">
+              <div>
                 <img
-                  className="w-full h-[420px] object-cover hover:scale-110"
+                  className="absolute w-[420px] h-[280px] object-contain bottom-20 z-20"
                   src={data.picture}
                   alt="Member"
                 />
-                <div className="absolute inset-0 flex items-end justify-center hover:bg-opacity-0">
-                  <div className="text-center w-full bg-opacity-50">
-                    <h2 className="text-[18px] font-bold text-white">
-                      {data.title}
-                    </h2>
-                    <p className="text-white text-[13px] mb-[5px]">{data.description}</p>
-                  </div>
+                <div className="absolute container flex bottom-20 top-32 bg-light-orange z-10"></div>
+                <div className="absolute w-full bg-opacity-50 z-30 top-4">
+                  <h2 className="text-[18px] font-bold text-black">
+                    {data.title}
+                  </h2>
+                  <p className="text-black text-[13px] mb-[5px]">
+                    {data.description}
+                  </p>
                 </div>
               </div>
             </div>
