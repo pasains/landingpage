@@ -49,7 +49,6 @@ export function Bottom() {
               >
                 pasains.mipa@mail.ugm.ac.id
               </a>
-              <p className="font-light">+62 123-4567-7890</p>
             </p>
           </div>
         </div>

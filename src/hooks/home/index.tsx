@@ -1,13 +1,12 @@
-import { PostProps } from "../../pages/post";
 import { useEffect, useState } from "react";
+import { PostProps } from "../../data";
 
 export default function useHome() {
   const [title, setTitle] = useState<PostProps[]>([]);
   const [page, setPage] = useState(1);
   const [size] = useState(12);
 
-  const REACT_APP_PORTAL_BE_URL =
-    process.env.REACT_APP_PORTAL_BE_URL || "http://localhost:8081";
+  const REACT_APP_PORTAL_BE_URL = process.env.REACT_APP_PORTAL_BE_URL;
 
   useEffect(() => {
     function fetchTitle() {

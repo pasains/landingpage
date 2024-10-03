@@ -1,27 +1,36 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { PostContent, PostProps } from "../../pages/post";
+import { PostContent } from "../../pages/post";
 import { contentData } from "../../data";
+import { PostProps } from "../../data";
+
+type Params = {
+  page: string;
+};
 
 export function Post() {
-  const { page } = useParams();
+  const { page } = useParams<Params>();
   const [data, setData] = useState<PostProps>({} as PostProps);
 
   useEffect(() => {
     function fetchData() {
-      fetch(`${contentData}/api/post/${page}`)
-        .then((response) => {
-          console.log(response);
-          if (!response.ok) {
-            throw new Error("Not Found");
-          }
-          return response.json();
-        })
-        .then((json) => setData(json));
+      if (!page) {
+        console.error("Page parameter is missing");
+        return;
+      }
+      const postData = contentData[page as keyof typeof contentData];
+      if (postData) {
+        setData(postData);
+      } else {
+        console.error("Data not found");
+      }
     }
     fetchData();
-    return () => {};
-  }, []);
+  }, [page]);
+
+  if (!data) {
+    return <div>Loading...</div>;
+  }
 
   return <PostContent {...data} />;
 }

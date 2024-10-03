@@ -6,23 +6,21 @@ import { GiPineTree } from "react-icons/gi";
 export function HomeContent() {
   return (
     <div>
-      <section className="mx-auto max-w-full relative">
-        <div className="bg-mount bg-cover bg-center bg-no-repeat h-screen relative bg-fixed ios-bg-fix">
-          <div className="bg-black bg-opacity-60 mx-auto place-content-center text-center h-screen md:text-left">
-            <h1 className="lg:text-4xl md:text-3xl sm:text-3xl text-3xl text-white mx-auto p-4 md:p-6 font-bold leading-tight tracking-widest">
-              NEVER <br /> ENDING <br />
-              <span> BROTHERHOOD</span>
-            </h1>
-            <div className="contaier border font-normal p-2 md:p-4 m-4 md:m-6 w-80 sm:w-72 md:w-80 lg:w-96 text-wrap text-white text-md text-justify mx-auto tracking-wide">
-              Halo, sahabat PASAINS! <br />
-              <span>
-                Selamat datang di halaman resmi PASAINS, organisasi pencinta
-                alam Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas
-                Gadjah Mada. Kami adalah unit kegiatan mahasiswa yang terdiri
-                dari mahasiswa-mahasiswa yang memiliki kepedulian dan kecintaan
-                terhadap kelestarian alam serta semangat petualangan.
-              </span>
-            </div>
+      <section className="bg-mount bg-cover bg-center bg-no-repeat h-screen relative bg-fixed ios-bg-fix">
+        <div className="bg-black bg-opacity-60 mx-auto h-screen w-screen space-y-10 md:space-y-12">
+          <h1 className="pt-36 md:pt-44 text-center md:text-left lg:text-5xl md:text-4xl sm:text-3xl text-3xl text-white mx-auto px-4 md:px-6 font-bold tracking-widest">
+            NEVER <br /> ENDING <br />
+            <span> BROTHERHOOD</span>
+          </h1>
+          <div className="con1aier border font-normal p-2 md:p-4 m-6 md:m-8 w-80 md:w-96 text-white text-md text-justify mx-auto tracking-wide">
+            Halo, sahabat PASAINS! <br />
+            <span>
+              Selamat datang di halaman resmi PASAINS, organisasi pencinta alam
+              Fakultas Matematika dan Ilmu Pengetahuan Alam, Universitas Gadjah
+              Mada. Kami adalah unit kegiatan mahasiswa yang terdiri dari
+              mahasiswa-mahasiswa yang memiliki kepedulian dan kecintaan
+              terhadap kelestarian alam serta semangat petualangan.
+            </span>
           </div>
         </div>
         <svg
@@ -59,7 +57,7 @@ export function HomeContent() {
           ></path>
         </svg>
       </section>
-      <section className="w-full:flex-wrap p-[50px] mx-auto place-content-center">
+      <section className="w-full:flex-wrap p-[50px] mx-auto justify-center items-center">
         <div className="text-lg text-center md:text-2xl mt-10 tracking-wider font-extrabold text-light-orange ">
           DIVISI
         </div>
@@ -71,45 +69,45 @@ export function HomeContent() {
           mengembangkan keterampilan dan kepedulian anggota terhadap alam."
         </p>
         <div className="border border-light-orange w-32 mx-auto place-content-center"></div>
-        <div className="container flex flex-cols-4 flex-wrap gap-4 md:gap-6 mx-auto justify-center my-10 md:my-20">
-          <div className="bg-mount2 h-[460px] md:h-[520px] md:w-[360px] bg-center bg-cover opacity-75 text-left mb-10 hover:scale-110">
-            <div className="bg-black bg-opacity-60 text-white h-[460px] md:h-[520px] place-content-center space-y-5">
+        <div className="container flex flex-cols-1 md:flex-cols-2 lg:flex-cols-4 flex-wrap gap-4 md:gap-6 mx-auto my-10 md:my-20">
+          <div className="bg-mount2 h-[460px] md:h-[520px] md:w-[360px] bg-center bg-cover opacity-75 text-left mb-10 md:hover:scale-110">
+            <div className="bg-black bg-opacity-60 py-32 md:py-40 text-white h-[460px] md:h-[520px] space-y-5 shadow-xl">
               <GiMountaintop className="size-8 mx-10" />
               <h1 className="font-extrabold text-lg mx-10">GUNUNG & HUTAN</h1>
-              <p className="tracking-wider w-60 text-sm font-normal mx-10">
+              <p className="tracking-wider w-60 text-sm md:text-md font-normal mx-10">
                 Fokus pada kegiatan pendakian gunung dan eksplorasi hutan
                 Mengadakan ekspedisi, pelatihan navigasi, dan survival di alam
                 bebas.
               </p>
             </div>
           </div>
-          <div className="bg-caving4 h-[460px] md:h-[520px] md:w-[360px] bg-cover opacity-75 text-left bg-center mb-10 hover:scale-110">
-            <div className="bg-black bg-opacity-60 text-white h-[460px] md:h-[520px] place-content-center space-y-5">
+          <div className="bg-caving4 h-[460px] md:h-[520px] md:w-[360px] bg-cover opacity-75 text-left bg-center mb-10 md:hover:scale-110">
+            <div className="bg-black bg-opacity-60 py-32 md:py-40 text-white h-[460px] md:h-[520px] space-y-5 shadow-xl">
               <GiCaveEntrance className="size-8 mx-10" />
               <h1 className="font-extrabold text-lg mx-10">SUSUR GUA</h1>
-              <p className="w-60 text-sm font-normal tracking-wider mx-10">
+              <p className="w-60 text-sm md:text-md font-normal tracking-wider mx-10">
                 Mengadakan eksplorasi dan penelitian di gua-gua. Melatih
                 teknik-teknik susur gua dan penanganan keadaan darurat di dalam
                 gua.
               </p>
             </div>
           </div>
-          <div className="bg-climbing h-[460px] md:h-[520px] md:w-[360px] bg-cover opacity-75 bg-center text-left mb-10 hover:scale-110">
-            <div className="bg-black bg-opacity-60 text-white h-[460px] md:h-[520px] place-content-center space-y-5">
+          <div className="bg-climbing h-[460px] md:h-[520px] md:w-[360px] bg-cover opacity-75 bg-center text-left mb-10 md:hover:scale-110">
+            <div className="bg-black bg-opacity-60 py-32 md:py-40 text-white h-[460px] md:h-[520px] space-y-5 shadow-xl">
               <GiMountainClimbing className="size-8 mx-10" />
               <h1 className="font-extrabold text-lg mx-10">PANJAT TEBING</h1>
-              <p className="w-60 text-sm font-normal mx-10 tracking-wider">
+              <p className="w-60 text-sm  md:text-md font-normal mx-10 tracking-wider">
                 Mengembangkan keterampilan dalam olahraga panjat tebing.
                 Melakukan pelatihan dan latihan rutin di dinding panjat tebing,
                 baik alamiah maupun buatan.
               </p>
             </div>
           </div>
-          <div className="bg-nature h-[460px] md:h-[520px] md:w-[360px] bg-cover bg-center opacity-75 text-left mb-10 hover:scale-110">
-            <div className="bg-black bg-opacity-60 text-white h-[460px] md:h-[520px] place-content-center space-y-5">
+          <div className="bg-nature h-[460px] md:h-[520px] md:w-[360px] bg-cover bg-center opacity-75 text-left mb-10 md:hover:scale-110">
+            <div className="bg-black bg-opacity-60 py-32 md:py-40 text-white h-[460px] md:h-[520px] space-y-5 shadow-xl">
               <GiPineTree className="size-8 mx-10" />
               <h1 className="font-extrabold text-lg mx-10">LINGKUNGAN HIDUP</h1>
-              <p className="tracking-wider w-60 text-sm font-normal mx-10">
+              <p className="tracking-wider w-60 text-sm md:text-md font-normal mx-10">
                 Mengadakan kegiatan yang berkaitan dengan pelestarian
                 lingkungan. Melakukan kampanye lingkungan, penanaman pohon, dan
                 kegiatan konservasi lainnya.
@@ -120,8 +118,8 @@ export function HomeContent() {
       </section>
       <section className="mx-auto max-w-full relative">
         <div className="bg-caving2 bg-cover bg-center bg-no-repeat h-screen relative bg-fixed ios-bg-fix">
-          <div className="bg-black bg-opacity-60 mx-auto place-content-center text-center h-screen">
-            <div className="font-normal mx-auto tracking-wider mb-4 p-4 text-lg text-white">
+          <div className="bg-black bg-opacity-60 mx-auto text-center h-screen">
+            <div className="pt-96 md:pt-[480px] font-normal mx-auto tracking-wider mb-4 p-4 text-lg text-white">
               "A journey of a thousand miles begins with a single step."
             </div>
             <p className="text-lg tracking-wider font-bold text-light-orange text-center mb-6">
