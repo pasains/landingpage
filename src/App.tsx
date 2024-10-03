@@ -6,7 +6,9 @@ import { Organization } from "./pages/organization";
 import { Post } from "./hooks/post";
 import { ContactUs } from "./pages/contactus";
 
+
 function App() {
+
   return (
     <div>
       <Routes>
