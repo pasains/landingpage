@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { PostContent, PostProps } from "../../content/post";
+import { PostContent, PostProps } from "../../pages/post";
 
 export function Post() {
   const { page } = useParams();
