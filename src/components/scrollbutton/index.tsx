@@ -24,9 +24,9 @@ export default function ScrollToTopButton() {
   return (
     <div
       onClick={scrollToTop}
-      className={`z-0 fixed bottom-[200px] lg:bottom-[120px] text-black right-[25px] transition hover:scale-125 duration-300 ${isVisible ? "block" : "hidden"}`}
+      className={`z-0 fixed bottom-10 md:bottom-[60px] text-light-orange right-4 md:right-6 transition hover:scale-125 ${isVisible ? "block" : "hidden"}`}
     >
-      <IoIosArrowDropup className="w-[45px] h-[45px]" />
+      <IoIosArrowDropup className="w-11 h-11" />
     </div>
   );
 }

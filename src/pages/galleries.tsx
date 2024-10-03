@@ -4,32 +4,35 @@ import axios from "axios";
 
 const InstagramFeed: React.FC = () => {
   const [posts, setPosts] = useState<any[]>([]);
+  const REACT_APP_INSTAGRAM_ACCESS_TOKEN =
+    process.env.REACT_APP_INSTAGRAM_ACCESS_TOKEN;
 
   useEffect(() => {
     axios
       .get("https://graph.instagram.com/me/media", {
         params: {
-          fields: "id,media_type,media_url,thumbnail_url,caption",
-          access_token:
-            "IGQWROSU9RZAExWZAzhQUHB3aHpZANVBMZAENMWTRJQmxIckZAZATG42V3AyNm1uZA1kzUkhFNmUzSWVHWENKRzJZAcXZADMnhsdWxVWEo2eVFCRmZASLWw3WGRRYU9kVXlXMFhZAMG83WkUyYTRLdWJwZAVVHN1FFNElPc1B0WWsZD",
+          fields:
+            "id,media_type,media_url,thumbnail_url,caption,is_shared_to_feed,permalink,timestamp,username",
+          access_token: REACT_APP_INSTAGRAM_ACCESS_TOKEN,
         },
       })
       .then((response) => {
-        console.log("Fetched Instagram posts:", response.data.data);
-        setPosts(response.data.data);
-        loadInstagramEmbedScript();
+        const post = response?.data?.data.filter((item: any) => {
+          console.log(`TEST_`, item);
+          if (
+            item.media_type === "IMAGE" ||
+            item.media_type === "CAROUSEL_ALBUM"
+          ) {
+            return item;
+          }
+        });
+        console.log("Fetched Instagram posts:", post);
+        setPosts(post);
       })
       .catch((error) => {
         console.error("Error fetching Instagram posts:", error);
       });
-  }, []);
-  const loadInstagramEmbedScript = () => {
-    const script = document.createElement("script");
-    script.src = "https://www.instagram.com/embed.js";
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-  };
+  }, [REACT_APP_INSTAGRAM_ACCESS_TOKEN]);
 
   return (
     <Layout>
@@ -51,19 +54,13 @@ const InstagramFeed: React.FC = () => {
           </div>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-1">
-          {posts.map((post) => (
-            <div key={post.id}>
-              {post.media_type === "VIDEO" ? (
-                <blockquote
-                  className="instagram-media"
-                  data-instgrm-permalink={`https://www.instagram.com/p/${post.id}/`}
-                  data-instgrm-version="12"
-                ></blockquote>
-              ) : (
+          {posts &&
+            posts.length > 0 &&
+            posts.map((post) => (
+              <div key={post.id}>
                 <img src={post.media_url} alt="media" />
-              )}
-            </div>
-          ))}
+              </div>
+            ))}
         </div>
       </div>
     </Layout>
