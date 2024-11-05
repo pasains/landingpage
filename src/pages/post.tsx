@@ -1,7 +1,6 @@
 import { Layout } from "../layout";
 import { IoPersonCircle } from "react-icons/io5";
 import { RiDoubleQuotesR } from "react-icons/ri";
-import RefreshTop from "../components/refreshtop";
 import { PostProps } from "../data";
 
 export const PostContent: React.FC<PostProps> = ({
@@ -23,7 +22,6 @@ export const PostContent: React.FC<PostProps> = ({
 }) => {
   return (
     <Layout>
-      <RefreshTop />
       <div className="pt-[96px]">
         <div className="flex flex-col place-content-center mx-auto container items-center w-full md:w-1/2">
           <div className="relative">
@@ -41,16 +39,16 @@ export const PostContent: React.FC<PostProps> = ({
               </h3>
               <div>
                 <p className="indent-8 text-justify text-md tracking-wide text-pretty leading-loose mt-4 md:mt-8">
-                {text1}
+                  {text1}
                 </p>
                 <p className="indent-8 text-justify text-md tracking-wide text-pretty leading-loose mt-4 md:mt-8">
-                {text2}
+                  {text2}
                 </p>
                 <p className="indent-8 text-justify text-md tracking-wide text-pretty leading-loose mt-4 md:mt-8">
-                {text3}
+                  {text3}
                 </p>
                 <p className="indent-8 text-justify text-md tracking-wide text-pretty leading-loose mt-4 md:mt-8">
-                {text4}
+                  {text4}
                 </p>
               </div>
             </div>
@@ -79,14 +77,14 @@ export const PostContent: React.FC<PostProps> = ({
           </div>
           <div className="p-4 md:p-6">
             <p className="text-justify text-md tracking-wide text-pretty leading-loose">
-            {caption}
+              {caption}
             </p>
           </div>
           <div className="flex gap-4 md:gap-6 items-center p-6 md:p-12 mb-4 font-light text-md md:text-lg md:tracking-wider">
             <RiDoubleQuotesR className="size-14 md:size-16 fill-light-orange" />
             <div className="border border-light-orange h-20"></div>
             <p>
-            "{quote}"
+              "{quote}"
               <br /> <span> — {name} </span>
             </p>
           </div>
