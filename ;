@@ -7,7 +7,6 @@ import { useState } from "react";
 import MessageForm from "../form";
 import TimedAlert from "../components/timedalert";
 import Heading from "../container/heading";
-import ScrollToTopButton from "../components/scrollbutton";
 
 export function ContactUs() {
   const { createMessage, error, success, setSuccess, setError } =
@@ -40,13 +39,13 @@ export function ContactUs() {
                 kami! Kami sangat antusias untuk berbagi semangat menjelajah
                 bersama.
                 <br />
-                Kami juga terbuka untuk kritik dan saran terkait website ini
-                agar lebih bermanfaat.
+                Kami juga terbuka untuk kritik dan saran tentang website ini
+                agar semakin bermanfaat.
                 <br />
                 Jangan ragu untuk menghubungi kami!
               </span>{" "}
             </p>
-            <div className="flex lg:flex-cols-2 flex-wrap mt-10 place-items-center w-full lg:w-3/4 mx-auto space-y-10 md:space-y-0">
+            <div className="flex flex-cols lg:flex-cols-2 flex-wrap mt-10 place-items-center w-full lg:w-3/4 mx-auto space-y-10 md:space-y-0">
               <div className=" mx-auto text-left space-y-5 lg:space-y-10">
                 <div className="flex flex-cols place-items-center gap-4">
                   <MdPlace className="rounded-full p-4 bg-white opacity-75 transition duration-300 hover:bg-light-orange size-14" />
@@ -99,18 +98,16 @@ export function ContactUs() {
                   </div>
                 </div>
               </div>
-              <div className="items-center mx-auto pb-10 md:pb-16 sm:p-5">
+              <div className="items-center mx-auto p-0 md:p-10">
                 <MessageForm
                   onSubmit={handleCreateMessage}
                   isSubmitting={isSubmitting}
                   success={success}
                 />
-                <div className="fixed z-0 top-3 right-2 md:top-4 md:right-4 p-2 md:p-4  w-[320px] md:w-fit">
+                <div className="fixed z-0 top-2 right-2 md:top-4 md:right-4">
                   {success && (
                     <TimedAlert
-                      message={
-                        "Your message has been sent. Please check your email for further discussion. Thank you!"
-                      }
+                      message={success}
                       duration={5000}
                       color="green"
                       onClose={() => setSuccess("")}
@@ -128,16 +125,15 @@ export function ContactUs() {
                   </div>
                 </div>
               </div>
+              <iframe
+                className="w-full h-[720px]"
+                title="maps"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.2075950551744!2d110.37432787596912!3d-7.767797377050637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a585eaaaaaaab%3A0x5fcbc633778f41a0!2sSIC%20FMIPA%20UGM%20(Student%20Internet%20Center)!5e0!3m2!1sen!2sid!4v1717151264582!5m2!1sen!2sid"
+              ></iframe>
             </div>
-            <iframe
-              className="w-full h-[720px]"
-              title="maps"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.2075950551744!2d110.37432787596912!3d-7.767797377050637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a585eaaaaaaab%3A0x5fcbc633778f41a0!2sSIC%20FMIPA%20UGM%20(Student%20Internet%20Center)!5e0!3m2!1sen!2sid!4v1717151264582!5m2!1sen!2sid"
-            ></iframe>
           </div>
         </section>
       </body>
-      <ScrollToTopButton />
     </div>
   );
 }
