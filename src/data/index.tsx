@@ -26,10 +26,10 @@ export const contentData: { [key: string]: PostProps } = {
     location: "Gunung Kidul, 16 September 2023",
     author: "Cephie dan Rastaban, PASAINS 23",
     picture1: require("../image/jepitu4.jpeg"),
-    picture2: require("../image/jepitu4.jpeg"),
-    picture3: require("../image/jepitu4.jpeg"),
-    picture4: require("../image/jepitu4.jpeg"),
-    picture5: require("../image/jepitu4.jpeg"),
+    picture2: require("../image/jepitu1.jpeg"),
+    picture3: require("../image/jepitu2.jpeg"),
+    picture4: require("../image/jepitu3.jpeg"),
+    picture5: require("../image/jepitu5.jpeg"),
     text1:
       "Kehadiran koloni monyet ekor panjang (long tailed macaque) di bagian selatan Daerah Istimewa Yogyakarta sudah kerap kali meresahkan warga. Spesies yang naik tingkat menjadi satwa yang dilindungi ini menjadikannya sulit untuk diatasi. Selain itu, mereka bergerak secara berkelompok dan tidak takut akan kehadiran manusia. Dengan latar belakang hal tersebut, perlu adanya tindakan preventif untuk mencegah invasi monyet ekor panjang tersebut di ladang hingga pemukiman warga. Invasi monyet di ladang dan pemukiman tentunya sangat merugikan bagi masyarakat seperti terjadinya kegagalan panen. Dalam mengupayakan hal tersebut, Unit Kegiatan Mahasiswa PASAINS FMIPA UGM berinovasi dalam pembuatan alat pengusir hama monyet ekor panjang dalam kegiatan Program Penguatan Kapasitas Organisasi Kemahasiswaan (PPK Ormawa).",
     text2:
