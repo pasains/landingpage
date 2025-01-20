@@ -1,6 +1,6 @@
 export function AboutContent() {
   return (
-    <div className="font-nunito w-full lg:w-3/4 xl:w-2/3 2xl:w-1/2 container mx-auto p-4 md:p-6">
+    <div className="font-nunito w-full lg:w-3/4 xl:w-2/3 2xl:w-1/2 container mx-auto p-4 md:p-6 mb-10 md:mb-14">
       <section className="flex items-center space-x-sm md:space-x-md mb-8 md:mb-16">
         <button className="border h-16 md:h-24 w-0 border-light-orange"></button>
         <h1 className="text-4xl md:text-5xl text-left font-extrabold tracking-tighter">
@@ -12,9 +12,11 @@ export function AboutContent() {
         <section className="grid grid-cols md:grid-cols-2 gap-10 md:gap-8">
           <div className="">
             <p className="text-justify text-pretty font-light md:tracking-wide">
-              <a className="text-3xl md:text-4xl text-light-orange font-bold">P</a>ASAINS
-              adalah sebuah Unit Kegiatan Mahasiswa (UKM) yang bergerak di
-              bidang ilmu kepecintaalaman yang ada di lingkungan Fakultas
+              <a className="text-3xl md:text-4xl text-light-orange font-bold">
+                P
+              </a>
+              ASAINS adalah sebuah Unit Kegiatan Mahasiswa (UKM) yang bergerak
+              di bidang ilmu kepecintaalaman yang ada di lingkungan Fakultas
               Matematika dan Ilmu Pengetahuan Alam (FMIPA) Universitas Gadjah
               Mada (UGM) yang berpedoman pada kode etik Pecinta Alam dan Tri
               Dharma Perguruan Tinggi serta berasaskan Pancasila dan berdasarkan
@@ -80,7 +82,7 @@ export function AboutContent() {
             <button className="border w-44 md:w-80 border-bold-orange "></button>
           </div>
         </section>
-        <div>
+        <section>
           <div className="grid grid-cols md:grid-cols-2 w-full place-items-center gap-2">
             <img
               src={require("../../image/jadul3.jpeg")}
@@ -108,21 +110,24 @@ export function AboutContent() {
             perjalanan dan awal mula perjuangan serta visi yang menjadi landasan
             PASAINS hingga saat ini.
           </div>
-        </div>
-        <section className="space-y-lg container bg-black bg-opacity-50 p-4 md:p-8">
-          <div className="flex flex-col-reverse md:flex-row items-center">
-            <p className="md:text-justify text-center font-bold border  border-light-orange p-4 md:p-6 w-full md:w-2/3">
+        </section>
+        <section>
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="text-4xl md:text-5xl font-bold tracking-widest space-y-4 text-center place-items-center w-full md:w-1/3 mx-auto mb-4 md:mb-0">
+              Visi
+            </div>
+            <p className="md:text-justify text-center font-bold border border-light-orange p-3 md:p-6 mb-4 md:mb-8 w-full md:w-2/3">
               Mewujudkan organisasi kepecintaalaman yang menjunjung tinggi
               tanggung jawab, solidaritas, dan rasa kekeluargaan dengan tetap
               mengutamakan etika serta menjadi wadah pengembangan keterampilan.
             </p>
-            <div className="text-white text-4xl md:text-5xl font-bold tracking-widest space-y-4 text-center place-items-end w-full md:w-1/3 mx-auto mb-4 md:mb-0">
-              Visi
-            </div>
           </div>
-          <div className="flex flex-col-reverse md:flex-row items-center">
-            <div className="border p-6 w-full md:w-2/3 border-light-orange">
-              <ol className="list-decimal text-justify tracking-wide space-y-2 text-pretty font-bold">
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="text-4xl md:text-5xl font-bold tracking-widest space-y-4 text-center place-items-center w-full md:w-1/3 mx-auto mb-4 md:mb-0">
+              Misi
+            </div>
+            <div className="border p-6 md:p-6 w-full md:w-2/3 border-light-orange">
+              <ol className="list-decimal ml-4 text-justify tracking-wide space-y-2 text-pretty font-bold">
                 <li>
                   Menjadikan PASAINS sebagai tempat untuk menyalurkan minat,
                   bakat, dan potensi anggota melalui kegiatan-kegiatannya.
@@ -153,16 +158,13 @@ export function AboutContent() {
                 </li>
               </ol>
             </div>
-            <div className="text-white text-4xl md:text-5xl font-bold tracking-widest space-y-xl w-full md:w-1/3 mx-auto place-items-end text-center mb-4 md:m-0">
-              Misi
-            </div>
           </div>
         </section>
-        <section className="">
-          <div className="mx-auto place-content-center text-center items-center space-y-xl md:space-y-2xl my-8">
-            <h1 className="text-3xl md:text-4xl text-light-orange text-center font-bold">
-              STRUKTUR KEPENGURUSAN
-            </h1>
+        <section>
+          <h1 className="mb-10 text-3xl md:text-4xl text-light-orange text-center font-bold">
+            STRUKTUR KEPENGURUSAN
+          </h1>
+          <div className="mx-auto place-content-center border border-light-orange text-center items-center py-14 space-y-xl md:space-y-2xl">
             <img
               src={require("../../image/chartpasains.png")}
               alt="chart"

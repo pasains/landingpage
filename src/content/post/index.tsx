@@ -26,9 +26,7 @@ export function Post() {
                 Obati Keresahan Warga: Mahasiswa FMIPA UGM Ciptakan Alat
                 Pengusir Hama Monyet Ekor Panjang
               </h2>
-              <h1 className="text-sm font-extralight">
-              POSTED ON JUNE 2024
-              </h1>
+              <h1 className="text-sm font-extralight">POSTED ON JUNE 2024</h1>
               <p className="text-md font-normal my-4 mb:my-8 text-justify">
                 Kehadiran koloni monyet ekor panjang di bagian selatan Daerah
                 Istimewa Yogyakarta sudah kerap kali meresahkan warga. Spesies
@@ -53,7 +51,7 @@ export function Post() {
                 Pendakian Gunung Sumbing
               </h2>
               <h1 className="text-sm font-extralight">
-              POSTED ON NOVEMBER 2023
+                POSTED ON NOVEMBER 2023
               </h1>
               <p className="text-md font-normal my-4 mb:my-8 text-justify">
                 Jumlah pendaki gunung dari tahun ke tahun terus meningkat. Meski
@@ -79,7 +77,7 @@ export function Post() {
                 Pernah Pudar
               </h2>
               <h1 className="text-sm font-extralight">
-              POSTED ON DECEMBER 2017
+                POSTED ON DECEMBER 2017
               </h1>
               <p className="text-md font-normal my-4 mb:my-8 text-justify">
                 Indonesia memiliki banyak ragam suku dan kebudayaan dimana
@@ -105,7 +103,7 @@ export function Post() {
                 Menilik Basecamp Pendakian Gunung Lawu via Cemoro Sewu
               </h2>
               <h1 className="text-sm font-extralight">
-              POSTED ON DECEMBER 2017
+                POSTED ON DECEMBER 2017
               </h1>
               <p className="text-md font-normal my-4 mb:my-8 text-justify">
                 Dinginnya udara pagi yang menembus kulit menemani menyambut

@@ -43,8 +43,8 @@ const Heading: React.FC = () => {
     },
     {
       id: 4,
-      title: "Galleries",
-      link: "/galleries",
+      title: "Post",
+      link: "/post",
     },
     {
       id: 5,
