@@ -6,13 +6,13 @@ import { GiPineTree } from "react-icons/gi";
 export function HomeContent() {
   return (
     <div>
-      <section className="bg-mount bg-cover bg-center bg-no-repeat h-screen relative bg-fixed ios-bg-fix">
-        <div className="bg-black bg-opacity-60 mx-auto h-screen w-screen space-y-10 md:space-y-12">
-          <h1 className="pt-36 md:pt-44 text-center md:text-left lg:text-5xl md:text-4xl sm:text-3xl text-3xl text-white mx-auto px-4 md:px-6 font-bold tracking-widest">
+      <figure className="bg-mount bg-cover bg-center bg-no-repeat h-screen relative bg-fixed ios-bg-fix">
+        <div className="absolute bottom-10 bg-black bg-opacity-60 mx-auto h-screen w-screen space-y-10 md:space-y-12">
+          <h1 className="pt-36 sm:pt-40 md:pt-44 lg:pt-48 px-4 sm:px-8 md:px-8 text-center md:text-left lg:text-5xl md:text-4xl text-3xl text-white mx-auto font-bold tracking-widest">
             NEVER <br /> ENDING <br />
             <span> BROTHERHOOD</span>
           </h1>
-          <div className="con1aier border font-normal p-2 md:p-4 m-6 md:m-8 w-80 md:w-96 text-white text-md text-justify mx-auto tracking-wide">
+          <div className="container border font-normal p-2 md:p-4 m-6 md:m-8 w-80 md:w-96 text-white text-md text-justify mx-auto tracking-wide">
             Halo, sahabat PASAINS! <br />
             <span>
               Selamat datang di halaman resmi PASAINS, organisasi pencinta alam
@@ -56,7 +56,7 @@ export function HomeContent() {
             d="M0,260L20,248C80,216,200,152,330,151.3C540,141,650,213,1020,208.7C840,244,960,192,1080,165.3C1200,139,1320,117,1380,106.7L1440,96L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
           ></path>
         </svg>
-      </section>
+      </figure>
       <section className="w-full:flex-wrap p-[50px] mx-auto justify-center items-center">
         <div className="text-lg text-center md:text-2xl mt-10 tracking-wider font-extrabold text-light-orange ">
           DIVISI

@@ -24,7 +24,7 @@ module.exports = {
         caving4: "url('./image/cvcvcvcv.jpg')",
         climbing: "url('./image/rc.jpg')",
         nature: "url('./image/lh.jpg')",
-        forest: "url('./image/lawu2.jpeg')",
+        onepiece: "url('./image/onepiece.jpg')",
       },
         backdropBlur: {
         xs: '2px',

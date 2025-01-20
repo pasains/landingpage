@@ -60,7 +60,7 @@ const MessageForm: React.FC<MessageProps> = ({
             value={messageData.name || ""}
             onChange={handleInputChange}
             placeholder="Name"
-            className="my-2 p-2 space-y-2 w-[240px] md:w-[320px] border border-orange-400 rounded-md"
+            className="my-2 p-2 space-y-2 w-[320px] md:w-[420px] border border-orange-400 rounded-md"
             required
           />
         </label>
@@ -72,7 +72,7 @@ const MessageForm: React.FC<MessageProps> = ({
             value={messageData.organization || ""}
             onChange={handleInputChange}
             placeholder="Organization"
-            className="my-2 p-2 space-y-2 w-[240px] md:w-[320px] border border-orange-400 rounded-md"
+            className="my-2 p-2 space-y-2 w-[320px] md:w-[420px] border border-orange-400 rounded-md"
             required
           />
         </label>
@@ -84,7 +84,7 @@ const MessageForm: React.FC<MessageProps> = ({
             value={messageData.email || ""}
             onChange={handleInputChange}
             placeholder="E-mail"
-            className="my-2 p-2 space-y-2 w-[300px] md:w-[360px] border border-orange-400 rounded-md"
+            className="my-2 p-2 space-y-2 w-[320px] md:w-[420px] border border-orange-400 rounded-md"
             required
           />
         </label>

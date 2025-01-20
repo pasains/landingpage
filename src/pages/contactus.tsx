@@ -26,7 +26,7 @@ export function ContactUs() {
         <Heading />
       </header>
       <body>
-        <section className="bg-forest bg-fixed bg-cover bg-center bg-no-repeat relative h-full md:h-full font-nunito focus:scroll-auto ios-bg-fix">
+        <section className="bg-onepiece bg-fixed bg-cover bg-center bg-no-repeat relative h-full md:h-full font-nunito focus:scroll-auto ios-bg-fix">
           <div className="bg-black bg-opacity-50 h-full md:h-full w-full">
             <h1 className="pt-24 text-2xl md:text-3xl lg:text-4xl text-white text-center tracking-wider font-extrabold mb-6 md:mb-8">
               CONTACT US
@@ -70,15 +70,10 @@ export function ContactUs() {
                       PHONE
                     </h1>
                     <p className="font-bold text-md text-white">
-                      Logistic <br />
+                      Logistic & Public Relations
+                      <br />
                       <span className="font-normal text-md">
-                        +62 123 4356 456
-                      </span>
-                    </p>
-                    <p className="font-bold text-md text-white">
-                      Public Relations <br />
-                      <span className="font-normal text-md">
-                        +62 123 2345 435
+                        +62 878-9323-7132
                       </span>
                     </p>
                   </div>
@@ -93,10 +88,15 @@ export function ContactUs() {
                       Business Inquire
                       <br />
                       <span className="font-normal text-md">
-                        pasains.mipa@mail.ugm.ac.id
+                        me@pasains.org
                       </span>
                     </p>
                   </div>
+                </div>
+                <div className="flex flex-cols place-items-center gap-4">
+                  <button className="flex box bg-orange-600 rounded-md w-fit h-fit p-2 place-content-center items-center animate-bounce text-white hover:bg-light-orange duration-300">
+                    Form Peminjaman Alat
+                  </button>
                 </div>
               </div>
               <div className="items-center mx-auto pb-10 md:pb-16 sm:p-5">
